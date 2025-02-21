@@ -8,7 +8,7 @@
     background-color: none;
 }
 
-.active{
+.active {
     font-weight: 700;
 }
 
@@ -45,7 +45,7 @@
 
 
 .hero {
-    background-color: #1e1e8b;
+    background-color: #3737d4;
     filter: brightness(95%);
     background-size: cover;
     display: block;
@@ -53,6 +53,21 @@
     color: white;
     align-content: center;
     height: 55vh;
+    padding: 10px;
+}
+
+/*Responsive Hero*/
+
+@media (max-width:770px) {
+    .hero {
+        height: 80vh;
+    }
+}
+
+@media (max-width:496px) {
+    .hero {
+        height: 85vh;
+    }
 }
 
 
@@ -69,12 +84,13 @@
 .container .cta-btn {
     background-color: white;
     color: black;
+    margin: 10px;
 }
 
 .container .cta-btn:hover {
     background-color: #3998e1;
     color: white;
-    border-color: #1c1c84;
+    border-color: #3737d4;
 }
 
 svg {
@@ -83,21 +99,64 @@ svg {
     display: block;
     top: 0px;
 }
+
+
+.features h1{
+    font-weight: 600;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.feature-card img {
+    width: 300px; 
+  height: 300px; 
+  object-fit: cover; 
+  border-radius: 10px; 
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.feature-card h3 {
+    font-size: 1.4em;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.feature-card p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    color: #3737d4;
+}
+
+.feature-card:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
 .footer {
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1c1c84;
+    background-color: #3737d4;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 3.5rem;
 }
 
-#page-container {
+#footer-container {
     position: relative;
-    min-height: 100vh;
+    min-height: 30vh;
 }
 
 .social-icons {
@@ -112,24 +171,26 @@ svg {
     align-items: start;
     order: row;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
-.closing {
+.copyright {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     align-items: end;
     order: row;
     max-width: fit-content;
+    padding-left: 20px;
 }
 
 .social-icons a:hover {
     color: #ddd;
+    text-decoration: none;
+
 }
 
 footer {
     color: white;
 }
-
